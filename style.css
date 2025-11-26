@@ -1,0 +1,408 @@
+/* - - - - - - - - - - - - - - -
+Prikaz za Laptop po Defaultu
+- - - - - - - - - - - - - - - */
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 5px 5px 5px 5px;
+    gap: 15px;
+    text-align: left;
+    height: 600px;
+}
+p {
+    padding: 10px;
+    color: white;
+}
+
+
+/* Primjer 1 */
+
+
+.klasaA {
+    border: 2px solid black;
+    border-radius: 7px;
+    background-color: rgb(0, 0, 0);
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+.klasaB {
+    border: 2px solid black;
+    border-radius: 7px;
+    background-color: rgb(0, 0, 0);
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
+}
+.klasaC {
+    border: 2px solid black;
+    border-radius: 7px;
+    background-color: rgb(0, 0, 0);
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+.klasaD {
+    border: 2px solid black;
+    border-radius: 7px;
+    background-color: rgb(0, 0, 0);
+    grid-column: 2 / 5;
+    grid-row: 2 / 3;
+}
+.klasaE {
+    border: 2px solid black;
+    border-radius: 7px;
+    background-color: rgb(5, 5, 5);
+    grid-column: 1 / 5;
+    grid-row: 3 / 4;
+}
+
+
+/* Primjer 2 */
+
+
+.jedan {
+    border-radius: 7px;
+    background-color: rgb(109, 109, 109);
+    grid-column: 2 / 5;
+    grid-row: 1 / 2;
+}
+.dva {
+    border-radius: 7px;
+    background-color: rgb(0, 0, 0);
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+}
+.tri {
+    border-radius: 7px;
+    background-color: rgb(0, 0, 0);
+    grid-column: 2 / 5;
+    grid-row: 2 / 4;
+}
+.cetiri {
+    border-radius: 7px;
+    background-color: rgb(109, 109, 109);
+    grid-column: 1 / 5;
+    grid-row: 4 / 5;
+}
+
+
+/* Primjer 3 */
+
+
+.prva {
+    border-radius: 7px;
+    background-color: rgb(94, 94, 94);
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+}
+.druga {
+    border-radius: 7px;
+    background-color: rgb(0, 0, 0);
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+.treca {
+    border-radius: 7px;
+    background-color: rgb(0, 0, 0);
+    grid-column: 2 / 5;
+    grid-row: 2 / 3;
+}
+.cetvrta {
+    border-radius: 7px;
+    background-color: rgb(160, 160, 160);
+    grid-column: 1 / 5;
+    grid-row: 3 / 4;
+}
+.peta {
+    border-radius: 7px;
+    background-color: rgb(94, 94, 94);
+    grid-column: 1 / 5;
+    grid-row: 4 / 5;
+}
+
+
+/* Primjer 4 */
+
+
+.klasajean {
+    border-radius: 7px;
+    background-color: rgb(94, 94, 94);
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+.klasadva {
+    border-radius: 7px;
+    background-color: rgb(94, 94, 94);
+    grid-column: 3 / 5;
+    grid-row: 1 / 3;
+}
+.klasatri {
+    border-radius: 7px;
+    background-color: rgb(94, 94, 94);
+    grid-column: 1 / 3;
+    grid-row: 3 / 5;
+}
+.konte {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr;
+    gap: 10px;
+    padding: 15px 15px 15px 15px;
+}
+.klasacetri {
+    border-radius: 7px;
+    background-color: rgb(94, 94, 94);
+    grid-column: 3 / 5;
+    grid-row: 3  / 5;
+    text-align: center;
+}
+.klasapet {
+    border-radius: 7px;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    background-color: rgb(44, 44, 44);
+    height: 125px;
+}
+.klasasest {
+    border-radius: 7px;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color: rgb(44, 44, 44);
+    height: 125px;
+}
+.klasaseam {
+    border-radius: 7px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: rgb(44, 44, 44);
+    height: 125px;
+}
+
+
+/* - - - - - - - - - - - - - - - - 
+Prikaz za Tablete od 681 - 1024px
+- - - - - - - - - - - - - - - - -  */
+
+@media screen and (min-width: 681px) and (max-width: 1024px) {
+
+
+    /* Primjer 1 */
+
+
+    p{
+        color: blue;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .klasaA {
+        grid-column: 1 / 5;
+        grid-row: 1 / 2;
+    }
+    .klasaB {
+        grid-column: 1 / 5;
+        grid-row: 2 / 3;
+    }
+    .klasaC {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+    .klasaD {
+        grid-column: 3 / 5;
+        grid-row: 3 / 4;
+    }
+    .klasaE {
+        grid-column: 1 / 5;
+        grid-row: 4 / 5;
+    }
+
+
+    /* Primjer 2 */
+
+
+    .jedan {
+        grid-column: 1 / 5;
+        grid-row: 1 / 2;
+    }
+    .dva {
+        grid-column: 1 / 2;
+        grid-row: 2 / 4;
+    }
+    .tri {
+        grid-column: 2 / 5;
+        grid-row: 2 / 4;
+    }
+    .cetiri {
+        grid-column: 1 / 5;
+        grid-row: 4 / 5;
+    }
+
+
+    /* Primjer 3 */
+
+
+    .prva {
+        grid-column: 1 / 5;
+        grid-row: 1 / 2;
+    }
+    .druga {
+        grid-column: 1 / 5;
+        grid-row: 2 / 3;
+    }
+    .treca {
+        grid-column: 1 / 3;
+        grid-row: 3 / 5;
+    }
+    .cetvrta {
+        grid-column: 3 / 5;
+        grid-row: 3 / 5;
+    }
+    .peta {
+        grid-column: 1 / 5;
+        grid-row: 5 / 6;
+    }
+
+
+    /* Primjer 4 */
+
+
+    .klasajean {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+    .klasadva {
+        grid-column: 3 / 5;
+        grid-row: 1 / 2;
+    }
+    .klasatri {
+        grid-column: 1 / 5;
+        grid-row: 2 / 3;
+    }
+    .klasacetri {
+        grid-column: 1 / 5;
+        grid-row: 3 / 4;
+    }
+}
+
+
+/* - - - - - - - - - - - - - - - - 
+Prikaz za Mobitele do 680px :)
+- - - - - - - - - - - - - - - - -  */
+
+@media screen and (max-width: 680px) {
+    p{
+        color: green;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+
+    /* Primjer 1 */
+
+
+    .klasaA {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+    .klasaB {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+    .klasaC {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+    .klasaD {
+        grid-column: 1 / 3;
+        grid-row: 4 / 5;
+    }
+    .klasaE {
+        grid-column: 1 / 3;
+        grid-row: 5 / 6;
+    }
+
+
+    /* Primjer 2 */
+
+
+    .jedan {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+    .dva {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+    .tri {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+    .cetiri {
+        grid-column: 1 / 3;
+        grid-row: 4 / 5;
+    }
+
+
+    /* Primjer 3 */
+
+
+    .prva {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+    .druga {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+    .treca {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+    .cetvrta {
+        grid-column: 1 / 3;
+        grid-row: 4 / 5;
+    }
+    .peta {
+        grid-column: 1 / 3;
+        grid-row: 5 / 6;
+    }
+
+    
+    /* Primjer 4 */
+
+
+    .klasajean {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+    .klasadva {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+    .klasatri {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+    .klasacetri {
+        grid-column: 1 / 3;
+        grid-row: 4 / 5;
+    }
+    .klasapet {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+    .klasasest {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+    .klasaseam {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+}
