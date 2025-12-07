@@ -121,6 +121,21 @@ p {
     grid-row: 4 / 5;
 }
 
+.ikone {
+    text-align: center;
+    padding: 20px;
+}
+
+.ikone a {
+    margin: 0 20px;           /* razmak između ikona */
+    display: inline-block;
+}
+
+.ikone img {
+    width: 40px;
+    height: 40px;
+}
+
 
 /* Primjer 4 */
 
